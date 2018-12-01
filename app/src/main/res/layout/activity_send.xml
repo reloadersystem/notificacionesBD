@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SendActivity">
+
+    <TextView
+        android:id="@+id/user_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Send to.."
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/message_view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/user_name_view"
+        android:layout_marginTop="45dp"
+
+        android:hint="Ingrese el Mensaje de Notificación"
+
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_view"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_plan_background"
+        android:text="Send to Notification" />
+
+    <ProgressBar
+        android:id="@+id/messageprogress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
